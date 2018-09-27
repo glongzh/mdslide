@@ -62,12 +62,13 @@ Gitlab可以在以下这些地方使用GFM：
 [这是内联链接](https://www.baidu.com)
 
 引用：
-[这是引用链接](this is a link)
+[这是引用链接][this is a link]
+[可以用数字定义链接][1]
+甚至可以省略，用[链接文字本身][]
+
 [可以引用同仓库的其他文件的相对路径](README.md)
 [也可以引用同仓库下的绝对路径](/doc/user/markdown.md)
 [也可以链接到Milestones页面](/../milestones)
-[可以用数字定义链接][1]
-甚至可以省略，用[链接文字本身][]
 
 [this is a link]: http://www.dragonsoft.com.cn
 [1]: http://www.google.com
@@ -78,12 +79,13 @@ Gitlab可以在以下这些地方使用GFM：
 [这是内联链接](https://www.baidu.com)
 
 引用：
-[这是引用链接](this is a link)
+[这是引用链接][this is a link]
+[可以用数字定义链接][1]
+甚至可以省略，用[链接文字本身][]
+
 [可以引用同仓库的其他文件的相对路径](README.md)
 [也可以引用同仓库下的绝对路径](/doc/user/markdown.md)
 [也可以链接到Milestones页面](/../milestones)
-[可以用数字定义链接][1]
-甚至可以省略，用[链接文字本身][]
 
 [this is a link]: http://www.dragonsoft.com.cn
 [1]: http://www.google.com
@@ -327,8 +329,6 @@ But let's throw in a <b>tag</b>.
 ### 数学表达式
 
 ```no-highlight
-内联方式：$`a^2+b^2=c^2`$.
-或者：
 ​```math
 a^2+b^2=c^2
 ​```
@@ -336,66 +336,30 @@ a^2+b^2=c^2
 
 结果：
 
-内联方式：$`a^2+b^2=c^2`$.
-或者：
-
 ```math
 a^2+b^2=c^2
 ```
 
-### 颜色
-
+### Diff
 ```no-highlight
-`#F00`  
-`#F00A`  
-`#FF0000`  
-`#FF0000AA`  
-`RGB(0,255,0)`  
-`RGB(0%,100%,0%)`  
-`RGBA(0,255,0,0.7)`  
-`HSL(540,70%,50%)`  
-`HSLA(540,70%,50%,0.7)`
+{+ 这是添加的内容 +}
+[+ 这也是添加的内容 +]
+{- 这是删除的内容 -}
+[- 这是删除的内容 -]
 ```
-
 结果：
 
-`#F00`  
-`#F00A`  
-`#FF0000`  
-`#FF0000AA`  
-`RGB(0,255,0)`  
-`RGB(0%,100%,0%)`  
-`RGBA(0,255,0,0.7)`  
-`HSL(540,70%,50%)`  
-`HSLA(540,70%,50%,0.7)`
+{+ 这是添加的内容 +}
+[+ 这也是添加的内容 +]
+{- 这是删除的内容 -}
+[- 这是删除的内容 -]
 
-支持格式：
-
-* HEX: `` `#RGB[A]` `` or `` `#RRGGBB[AA]` ``
-* RGB: `` `RGB[A](R, G, B[, A])` ``
-* HSL: `` `HSL[A](H, S, L[, A])` ``
-
-### 流程图
-
+### Emoji
 ```no-highlight
-​```mermaid
-graph TD;
-  A-->B;
-  A-->C;
-  B-->D;
-  C-->D;
-​```
+:tree: 上骑只 :monkey: 
+点个赞:thumbsup:
 ```
-
 结果：
 
-```mermaid
-graph TD;
-  A-->B;
-  A-->C;
-  B-->D;
-  C-->D;
-```
-
-关于流程图的详细使用，请参考[mermaid官网][https://mermaidjs.github.io/]。
-
+:tree: 上骑只 :monkey: 
+点个赞:thumbsup:
