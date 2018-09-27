@@ -62,14 +62,14 @@ Gitlab可以在以下这些地方使用GFM：
 [这是内联链接](https://www.baidu.com)
 
 引用：
-[这是引用链接](this is a link)
+[这是引用链接](this_is_a_link)
 [可以引用同仓库的其他文件的相对路径](README.md)
 [也可以引用同仓库下的绝对路径](/doc/user/markdown.md)
 [也可以链接到Milestones页面](/../milestones)
 [可以用数字定义链接][1]
 甚至可以省略，用[链接文字本身][]
 
-[this is a link]: http://www.dragonsoft.com.cn
+[this_is_a_link]: http://www.dragonsoft.com.cn
 [1]: http://www.google.com
 [链接文字本身]: http://www.qq.com
 ```
@@ -78,14 +78,14 @@ Gitlab可以在以下这些地方使用GFM：
 [这是内联链接](https://www.baidu.com)
 
 引用：
-[这是引用链接](this is a link)
+[这是引用链接](this_is_a_link)
 [可以引用同仓库的其他文件的相对路径](README.md)
 [也可以引用同仓库下的绝对路径](/doc/user/markdown.md)
 [也可以链接到Milestones页面](/../milestones)
 [可以用数字定义链接][1]
 甚至可以省略，用[链接文字本身][]
 
-[this is a link]: http://www.dragonsoft.com.cn
+[this_is_a_link]: http://www.dragonsoft.com.cn
 [1]: http://www.google.com
 [链接文字本身]: http://www.qq.com
 
