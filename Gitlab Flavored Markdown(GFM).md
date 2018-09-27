@@ -78,7 +78,7 @@ Gitlab可以在以下这些地方使用GFM：
 [这是内联链接](https://www.baidu.com)
 
 引用：
-[这是引用链接](This is a link)
+[这是引用链接](this is a link)
 [可以引用同仓库的其他文件的相对路径](README.md)
 [也可以引用同仓库下的绝对路径](/doc/user/markdown.md)
 [也可以链接到Milestones页面](/../milestones)
