@@ -70,7 +70,7 @@ Gitlab可以在以下这些地方使用GFM：
 [也可以引用同仓库下的绝对路径](/doc/user/markdown.md)
 [也可以链接到Milestones页面](/../milestones)
 
-[this is a link]: http://www.dragonsoft.com.cn
+[this_is_a_link]: http://www.dragonsoft.com.cn
 [1]: http://www.google.com
 [链接文字本身]: http://www.qq.com
 ```
@@ -87,7 +87,7 @@ Gitlab可以在以下这些地方使用GFM：
 [也可以引用同仓库下的绝对路径](/doc/user/markdown.md)
 [也可以链接到Milestones页面](/../milestones)
 
-[this is a link]: http://www.dragonsoft.com.cn
+[this_is_a_link]: http://www.dragonsoft.com.cn
 [1]: http://www.google.com
 [链接文字本身]: http://www.qq.com
 
