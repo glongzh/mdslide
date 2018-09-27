@@ -103,13 +103,13 @@ Gitlab可以在以下这些地方使用GFM：
 ```
 引用：
 ```no-highlight
-![alt text](koala)
+![alt text][koala]
 
 [koala]: img/Koala.jpg
 ```
 结果：
 ![alt text](img/Koala.jpg)
-![alt text](koala)
+![alt text][koala]
 
 [koala]: img/Koala.jpg
 
