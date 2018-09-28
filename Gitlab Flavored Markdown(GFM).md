@@ -1,5 +1,7 @@
 # Gitlab Flavored Markdown(GFM)说明文档
 
+---
+
 Gitlab Flavored Markdown受[GitHub Flavored Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/)的影响，并在[CommonMark][https://github.com/gjtorikian/commonmarker]的基础上扩展了一些很实用的功能。
 
 Gitlab可以在以下这些地方使用GFM：
@@ -12,7 +14,11 @@ Gitlab可以在以下这些地方使用GFM：
 * wiki
 * 仓库内的md文档
 
+---
+
 ## 基本语法
+
+---
 
 ### 标题
 
@@ -24,6 +30,8 @@ Gitlab可以在以下这些地方使用GFM：
 ##### H5
 ###### H6
 ```
+
+---
 
 ### 列表
 
@@ -53,6 +61,8 @@ Gitlab可以在以下这些地方使用GFM：
 - 或减号
 
 + 或加号
+
+---
 
 ### 链接
 
@@ -95,6 +105,8 @@ Gitlab可以在以下这些地方使用GFM：
 >
 > Gitlab不能引用wiki的内容，wiki和仓库是互相独立的。
 
+---
+
 ### 图片
 
 内联：
@@ -112,6 +124,8 @@ Gitlab可以在以下这些地方使用GFM：
 ![alt text][koala]
 
 [koala]: img/Koala.jpg
+
+---
 
 ### 引用
 
@@ -132,6 +146,8 @@ Quote break.
 Quote break.
 
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
+
+---
 
 ### 表格
 
@@ -167,6 +183,8 @@ Cell可以设置对齐方式：
 | Cell 1       |  Cell 2  |        Cell 3 | Cell 4       |  Cell 5  |        Cell 6 |
 | Cell 7       |  Cell 8  |        Cell 9 | Cell 10      | Cell 11  |       Cell 12 |
 
+---
+
 ### 内嵌HTML
 
 允许的HTML tag请参照此链接[http://www.rubydoc.info/gems/html-pipeline/1.11.0/HTML/Pipeline/SanitizationFilter#WHITELIST-constant][]
@@ -191,6 +209,8 @@ Cell可以设置对齐方式：
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
 
+---
+
 ### 样式
 
 ```no-highlight
@@ -213,6 +233,8 @@ Cell可以设置对齐方式：
 
 ~~删除此内容~~
 
+---
+
 ### 脚注
 
 ```no-highlight
@@ -224,9 +246,11 @@ Cell可以设置对齐方式：
 
 [^2]: 这是脚注！
 
-
+---
 
 ## 扩展语法
+
+---
 
 ### 语法高亮
 
@@ -282,6 +306,8 @@ s = "There is no highlighting for this."
 But let's throw in a <b>tag</b>.
 ```
 
+---
+
 ### 任务列表
 
 ```no-highlight
@@ -316,6 +342,8 @@ But let's throw in a <b>tag</b>.
      1. [ ] 子任务 1
      2. [x] 子任务 2
 
+---
+
 ### 视频
 
 支持的视频格式： `.mp4`, `.m4v`, `.mov`, `.webm`, and `.ogv`
@@ -326,6 +354,7 @@ But let's throw in a <b>tag</b>.
 
 ![示例视频](img/video.mp4)
 
+---
 
 ### Diff
 ```no-highlight
@@ -340,6 +369,8 @@ But let's throw in a <b>tag</b>.
 [+ 这也是添加的内容 +]
 {- 这是删除的内容 -}
 [- 这是删除的内容 -]
+
+---
 
 ### Emoji
 ```no-highlight
