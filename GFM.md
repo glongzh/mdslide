@@ -48,6 +48,7 @@ Gitlab可以在以下这些地方使用GFM：
 + 或加号
 ```
 
+----
 结果：
 
 1. 有序列表的item
@@ -84,17 +85,22 @@ Gitlab可以在以下这些地方使用GFM：
 [1]: http://www.google.com
 [链接文字本身]: http://www.qq.com
 ```
+----
 结果：
 内联：
 [这是内联链接](https://www.baidu.com)
 
 引用：
 [这是引用链接][this is a link]
+
 [可以用数字定义链接][1]
+
 甚至可以省略，用[链接文字本身][]
 
 [可以引用同仓库的其他文件的相对路径](README.md)
+
 [也可以引用同仓库下的绝对路径](/doc/user/markdown.md)
+
 [也可以链接到Milestones页面](/../milestones)
 
 [this is a link]: http://www.dragonsoft.com.cn
@@ -168,20 +174,20 @@ Quote break.
 > **注意:**
 >
 > 表头的虚线至少得三个---
-
+----
 Cell可以设置对齐方式：
 
 ```
-| Left Aligned | Centered | Right Aligned | Left Aligned | Centered | Right Aligned |
-| :----------- | :------: | ------------: | :----------- | :------: | ------------: |
-| Cell 1       | Cell 2   | Cell 3        | Cell 4       | Cell 5   | Cell 6        |
-| Cell 7       | Cell 8   | Cell 9        | Cell 10      | Cell 11  | Cell 12       |
+| Left Aligned | Centered | Right Aligned |
+| :----------- | :------: | ------------: |
+| Cell 1       | Cell 2   | Cell 3        |
+| Cell 7       | Cell 8   | Cell 9        |
 ```
 
-| Left Aligned | Centered | Right Aligned | Left Aligned | Centered | Right Aligned |
-| :----------- | :------: | ------------: | :----------- | :------: | ------------: |
-| Cell 1       |  Cell 2  |        Cell 3 | Cell 4       |  Cell 5  |        Cell 6 |
-| Cell 7       |  Cell 8  |        Cell 9 | Cell 10      | Cell 11  |       Cell 12 |
+| Left Aligned | Centered | Right Aligned |
+| :----------- | :------: | ------------: |
+| Cell 1       | Cell 2   | Cell 3        |
+| Cell 7       | Cell 8   | Cell 9        |
 
 ---
 
@@ -198,7 +204,7 @@ Cell可以设置对齐方式：
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
 ```
-
+----
 结果：
 
 <dl>
@@ -255,33 +261,6 @@ Cell可以设置对齐方式：
 ### 语法高亮
 
 ```no-highlight
-​```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-​```
-
-​```python
-def function():
-    #indenting works just fine in the fenced code block
-    s = "Python syntax highlighting"
-    print s
-​```
-
-​```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-​```
-
-​```
-未指定语言，无语法高亮
-s = "There is no highlighting for this."
-But let's throw in a <b>tag</b>.
-​```
-```
-
-结果：
-
 ```javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
@@ -294,10 +273,27 @@ def function():
     print s
 ```
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+```
+未指定语言，无语法高亮
+s = "There is no highlighting for this."
+But let's throw in a <b>tag</b>.
+```
+
+```
+
+----
+
+结果：
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+```python
+def function():
+    #indenting works just fine in the fenced code block
+    s = "Python syntax highlighting"
+    print s
 ```
 
 ```
@@ -317,7 +313,7 @@ But let's throw in a <b>tag</b>.
     - [x] 子任务 2
     - [ ] 子任务 3
 ```
-
+----
 结果：
 
 - [x] 已完成任务
@@ -326,6 +322,7 @@ But let's throw in a <b>tag</b>.
     - [x] 子任务 2
     - [ ] 子任务 3
 
+----
 也支持有序列表：
 
 ```no-highlight
@@ -334,7 +331,7 @@ But let's throw in a <b>tag</b>.
     1. [ ] 子任务 1
     1. [x] 子任务 2
 ```
-
+----
 结果：
 
 1. [x] 已完成任务
