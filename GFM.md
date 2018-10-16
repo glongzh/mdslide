@@ -1,5 +1,19 @@
 # Gitlab Flavored Markdown(GFM)说明文档
+---
+## Markdown是什么
+----
+> 一种可以使用普通文本编辑器编写的轻量级标记语言
 
+作者：
+* John Gruber
+* Aaron Swartz
+---
+## 为啥要用Markdown
+----
+* 易读
+* 易写
+* 各种平台支持
+* 便于交流
 ---
 
 Gitlab Flavored Markdown受[GitHub Flavored Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/)的影响，并在[CommonMark][https://github.com/gjtorikian/commonmarker]的基础上扩展了一些很实用的功能。
@@ -261,7 +275,7 @@ Cell可以设置对齐方式：
 ### 语法高亮
 
 ```no-highlight
-```javascript
+​```javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
@@ -284,7 +298,7 @@ But let's throw in a <b>tag</b>.
 ----
 
 结果：
-```javascript
+​```javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
@@ -381,3 +395,8 @@ But let's throw in a <b>tag</b>.
 
 树上骑只 :monkey: 
 点个赞:thumbsup:
+
+---
+## 编辑器推荐
+* 你喜欢的编辑器+插件
+* Typora
